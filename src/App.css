@@ -1,38 +1,214 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@layer components {
+  .gpt3__navbar-links nav a,
+  .gpt3__navbar-links div a {
+    @apply font-medium text-white text-base mx-4;
+    cursor: pointer;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .gpt3__navbar-menu svg {
+    cursor: pointer;
+  }
+
+  .gpt3__mavbar-menu_links-sign {
+    display: none;
+  }
+
+  .gpt3__brand-content__links img {
+    @apply mx-4 my-3;
+  }
+
+  .gpt3__whatpgt3-feature__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    @apply gap-x-12;
+  }
+  .gpt3__footer-container__links-block a{
+    @apply block text-xs text-white my-6;
+  }
+
+  .gpt3__footer-container__links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-auto-rows: max-content;
+    @apply gap-x-8 gap-y-8;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@layer utilities {
+  .gradient__bg {
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(
+      circle at 10% 25%,
+      rgba(0, 40, 83, 1) 5%,
+      rgba(4, 12, 24, 1) 40%
+    );
 
-.App-link {
-  color: #61dafb;
-}
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(
+      circle at 10% 25%,
+      rgba(0, 40, 83, 1) 5%,
+      rgba(4, 12, 24, 1) 40%
+    );
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    /* opera 11.10+ */
+    background: -o-radial-gradient(
+      circle at 10% 25%,
+      rgba(0, 40, 83, 1) 5%,
+      rgba(4, 12, 24, 1) 40%
+    );
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(
+      circle at 10% 25%,
+      rgba(0, 40, 83, 1) 5%,
+      rgba(4, 12, 24, 1) 40%
+    );
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(
+      circle at 10% 25%,
+      rgba(0, 40, 83, 1) 5%,
+      rgba(4, 12, 24, 1) 40%
+    );
   }
-  to {
-    transform: rotate(360deg);
+
+  .gradient__bg-span {
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(
+      circle at 15% 25%,
+      rgba(0, 40, 83, 1) 0%,
+      rgba(4, 12, 24, 1) 100%
+    );
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(
+      circle at 15% 25%,
+      rgba(0, 40, 83, 1) 0%,
+      rgba(4, 12, 24, 1) 100%
+    );
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(
+      circle at 15% 25%,
+      rgba(0, 40, 83, 1) 0%,
+      rgba(4, 12, 24, 1) 100%
+    );
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(
+      circle at 15% 25%,
+      rgba(0, 40, 83, 1) 0%,
+      rgba(4, 12, 24, 1) 100%
+    );
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(
+      circle at 15% 25%,
+      rgba(0, 40, 83, 1) 0%,
+      rgba(4, 12, 24, 1) 100%
+    );
+  }
+
+  .gradient__text {
+    background-image: -moz-linear-gradient(
+      90deg,
+      rgba(255, 255, 0, 1) 0%,
+      rgba(255, 255, 0, 1) 0%,
+      rgba(174, 103, 250, 1) 0%,
+      rgba(244, 152, 103, 1) 100%
+    );
+
+    background-image: -webkit-linear-gradient(
+      90deg,
+      rgba(255, 255, 0, 1) 0%,
+      rgba(255, 255, 0, 1) 0%,
+      rgba(174, 103, 250, 1) 0%,
+      rgba(244, 152, 103, 1) 100%
+    );
+
+    background-image: -o-linear-gradient(
+      90deg,
+      rgba(255, 255, 0, 1) 0%,
+      rgba(255, 255, 0, 1) 0%,
+      rgba(174, 103, 250, 1) 0%,
+      rgba(244, 152, 103, 1) 100%
+    );
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F49867', endColorstr='#FFFF00', GradientType=0 );
+
+    background-image: -ms-linear-gradient(
+      90deg,
+      rgba(255, 255, 0, 1) 0%,
+      rgba(255, 255, 0, 1) 0%,
+      rgba(174, 103, 250, 1) 0%,
+      rgba(244, 152, 103, 1) 100%
+    );
+
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 0, 1) 0%,
+      rgba(255, 255, 0, 1) 0%,
+      rgba(174, 103, 250, 1) 0%,
+      rgba(244, 152, 103, 1) 100%
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .scale-up-center {
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+      both;
+    animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+
+  @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  .gpt3__header-content__input-text:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: #3d6184;
+  }
+}
+
+@layer base {
+  h1 {
+    @apply text-5xl lg:text-6xl leading-tight lg:leading-tight font-bold tracking-tight;
+  }
+  h2 {
+    @apply text-3xl lg:text-4xl font-bold leading-[45px] lg:leading-[45px];
+  }
+  h3 {
+    @apply text-xl lg:text-2xl font-bold leading-tight;
+  }
+  h4 {
+    @apply text-lg leading-6 font-bold;
+  }
+  input {
+    @apply bg-[#052D56] border-0 rounded-l h-12 md:h-12 w-full max-w-sm py-0 px-4 text-white placeholder:text-[#3D6184] my-4 outline-none;
   }
 }
