@@ -1,6 +1,6 @@
 # GPT3 AI Landing Page Template
 
-[GPT3](https://gpt3.zeroff.tech) - Simple template Landing page on the topic of Artificial Intelligence project. Project is running on [ReactJS](https://reactjs.org/), UI created with mostly [TailwindCSS](https://tailwindcss.com/) framework and also good old CSS.
+[GPT3](http://gpt3.zeroff.tech) - Simple template Landing page on the topic of Artificial Intelligence project. Project is running on [ReactJS](https://reactjs.org/), UI created with mostly [TailwindCSS](https://tailwindcss.com/) framework and also good old CSS.
 
 Purpose of this work - create a fully responsive, transform a Figma design into a fully functioning website & to improve CSS skills.
 
@@ -14,7 +14,7 @@ Initial Figma design: [https://www.figma.com/file/lz9lLpFHMxHm2odnwM3R0z/gpt3](h
 
 
 ## See the project: 
-Production build is also available at [gpt3.zeroff.tech](https://gpt3.zeroff.tech)
+Production build is also available at [gpt3.zeroff.tech](http://gpt3.zeroff.tech)
 
 
 ### Usage
